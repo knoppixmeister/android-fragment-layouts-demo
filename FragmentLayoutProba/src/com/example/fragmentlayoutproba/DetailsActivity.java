@@ -7,7 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 
 //!!!!! WARNING !!!!!!!!!!
-//Add this class as activity into AndroidManifes.xml
+//Do not forget to add this class as activity element into AndroidManifes.xml
 public class DetailsActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
