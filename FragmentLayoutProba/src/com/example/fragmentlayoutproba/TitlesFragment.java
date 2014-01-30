@@ -63,9 +63,9 @@ public class TitlesFragment extends ListFragment {
      * whole new activity in which it is displayed.
      */
     void showDetails(int index) {
-        mCurCheckPosition = index;
+    	mCurCheckPosition = index;
 
-        if(mDualPane) {
+    	if(mDualPane) {
             // We can display everything in-place with fragments, so update
             // the list to highlight the selected item and show the data.
             getListView().setItemChecked(index, true);
@@ -83,10 +83,8 @@ public class TitlesFragment extends ListFragment {
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                         .commit();
             }
-        }
-        else {
-            // Otherwise we need to launch a new activity to display
-            // the dialog fragment with selected text.
+    	}
+    	else {
             Intent intent = new Intent();
             intent.setClass(getActivity(), DetailsActivity.class);
             intent.putExtra("index", index);
