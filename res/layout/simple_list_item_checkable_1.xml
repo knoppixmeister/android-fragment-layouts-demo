@@ -1,0 +1,14 @@
+<com.example.fragmentlayoutproba.CheckableFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView	android:id="@android:id/text1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:minHeight="?android:attr/listPreferredItemHeight"
+				android:gravity="center_vertical"
+				android:text="sample text"/>
+
+</com.example.fragmentlayoutproba.CheckableFrameLayout>
